@@ -5,7 +5,7 @@
 # Date of latest revision:      06/06/2023
 # Purpose:                      Execute Linux terminal commands from a Python script
 
-# Modules
+# Import Libraries
 # Import the OS to utilize Bash commands
 import os
 # Import the subprocess module

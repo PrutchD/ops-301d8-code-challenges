@@ -3,7 +3,7 @@
 # Script Name:                  Ops 301d8 Challenge 06
 # Author:                       David Prutch
 # Date of latest revision:      06/07/2023
-# Purpose:                      Execute Linux terminal commands from a Python script
+# Purpose:                      Use os.walk() function to map out directories
 
 # Import libraries
 
@@ -16,11 +16,11 @@ inp = input("Please enter a directory path: ")
 # Declaration of functions
 def copy_dir(x): 
     for (root, dirs, files) in os.walk(x):
-        ### Add a print command here to print ==root==
+        # Print root
         print(root)
-        ### Add a print command here to print ==dirs==
+        # Print directories
         print(dirs)
-        ### Add a print command here to print ==files==
+        # Print files
         print(files)
 
 

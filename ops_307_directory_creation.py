@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Script Name:                  Ops 301d8 Challenge 06
+# Script Name:                  Ops 301d8 Challenge 07
 # Author:                       David Prutch
 # Date of latest revision:      06/07/2023
 # Purpose:                      Use os.walk() function to map out directories

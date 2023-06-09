@@ -25,9 +25,9 @@ def number_comparison(a, b):
         print("I am not sure")
 
 def less_greater_equal(a, b):
-    if a <= b:
+    if a <= b and a < b:
         print(a, "is less than or equal to", b)
-    elif a >= b:
+    elif a >= b and a > b:
         print(a, "is greater than or equal to", b)
     else:
         print("I am not sure")

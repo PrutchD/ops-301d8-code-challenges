@@ -3,7 +3,7 @@
 # Script Name:                  Ops 301d8 Challenge 10
 # Author:                       David Prutch
 # Date of latest revision:      06/12/2023
-# Purpose:                      Working with Python Conditional Statements
+# Purpose:                      Working with Python file handling
 
 
 # Import libraries

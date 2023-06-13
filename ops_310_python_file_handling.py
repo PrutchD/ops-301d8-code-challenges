@@ -40,8 +40,15 @@ def read_file(file_name3):
     content = file_name3.readlines()
     print(content[0])
     file_name3.close()
+
+# Remove file
+# Calls Remove rom os module
+def remove_file(file_name4):
+    from os import remove
+    remove(file_name4)
 # Main
 create_file(file)
 append_file(file)
 read_file(file)
+remove_file(file)
 # End

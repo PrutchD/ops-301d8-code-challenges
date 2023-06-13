@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-# Script Name:                  Ops 301d8 Challenge 09
+# Script Name:                  Ops 301d8 Challenge 11
 # Author:                       David Prutch
-# Date of latest revision:      06/09/2023
+# Date of latest revision:      06/13/2023
 # Purpose:                      Working with psutil
 #                               Requires psutil to be installed
 #                               Open Bash terminal run the following command: sudo pip install psutil

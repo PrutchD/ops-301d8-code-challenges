@@ -9,15 +9,21 @@
 # Import libraries
 import requests
 # Declaration of variables
+# stores the url input of the user
 url_inp = input("Enter the destination url in the form https://www.domain-name.com: ")
+# Array stores the menu options of HTTP requests
 request_type = ["1: GET", "2: POST", '3: PUT', "4: DELETE", "5: HEAD", "6: PATCH", "7: OPTIONS"] 
+# stores empty string to be used in functions
 choice = ""
+# stores empty string to be used in functions
 response = ""
 # Declaration of functions
+# Iterates over url_inp variable array to print menu items on single lines
 def menu():
     for req in request_type:
         print(req)
 
+# takes in input from menu selection and applies appropriate request call to respective selection
 def menu_selection(var):
     var = int(var)
     global choice
@@ -38,6 +44,7 @@ def menu_selection(var):
     else:
         print("That was not a choice from the menu")
 
+# responds to confirmation to send request prints status code
 def run_request(menu_inp, selection):
     global response
     menu_inp = int(menu_inp)
@@ -65,7 +72,9 @@ def run_request(menu_inp, selection):
     else:
         print("That's ok, I didn't want to run that for you anyway :(")
 
-def error_messages(var):
+# takes status code as input converts to string for comparison prints from selection of known status responses
+# also return response header
+def status_messages(var):
     if str(response.status_code) == "200":
         print("Success")
         print(response.headers)
@@ -95,10 +104,11 @@ def error_messages(var):
     
 # Main
 menu()
+# requests menu selection
 inp = input("Please select a number from the menu: ")
 menu_selection(inp)
 run_request(inp, choice)
-error_messages(response)
+status_messages(response)
 
 
 
